@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "chart-pie-fix",
+	"version": "${version}",
+	"name": "Pie Chart Fix",
+	"description": "Adds Shift+0-9 shortcuts for accessing profiler pie chart entries above 9",
+	"authors": [
+		"m1kha1lk"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/pie-chart-fix"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chart-pie-fix/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.m1kha1l.piechartfix.client.ChartPieFixClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "chart-pie-fix.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
